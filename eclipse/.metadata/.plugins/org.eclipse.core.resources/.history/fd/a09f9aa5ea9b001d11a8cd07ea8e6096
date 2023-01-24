@@ -1,0 +1,7 @@
+package mint.modules.types;
+
+public interface Updatable {
+
+	void update();
+	
+}

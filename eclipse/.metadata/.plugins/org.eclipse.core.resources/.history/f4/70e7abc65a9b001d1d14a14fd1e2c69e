@@ -1,0 +1,22 @@
+package mint;
+
+import java.util.concurrent.CopyOnWriteArrayList;
+
+import org.lwjgl.opengl.Display;
+
+import mint.modules.Module;
+
+public class Client {
+
+	public static String name = "Mint", version = "0.1a";
+	public CopyOnWriteArrayList<Module> modules = new CopyOnWriteArrayList<Module>();
+	
+	public static void startup() {
+		System.out.println("Starting " + name + " v" + version);
+		Display.setTitle(name + " v" + version);
+	}
+	
+	public void keyPress(int key) {
+		
+	}
+}

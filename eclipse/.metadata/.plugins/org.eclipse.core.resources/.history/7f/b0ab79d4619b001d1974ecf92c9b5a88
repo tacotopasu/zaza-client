@@ -1,0 +1,21 @@
+package mint.modules.movement;
+
+import org.lwjgl.input.Keyboard;
+
+import mint.events.Event;
+import mint.events.listeners.EventUpdate;
+import mint.modules.Module;
+public class Fly extends Module{
+
+	public Fly() {
+		super("Fly", Keyboard.KEY_RSHIFT, Category.MOVEMENT);
+	}
+	
+	public void onEvent(Event e) {
+		if(e instanceof EventUpdate) {
+			if(e.isPre()) {
+				
+			}
+		}
+	}
+}

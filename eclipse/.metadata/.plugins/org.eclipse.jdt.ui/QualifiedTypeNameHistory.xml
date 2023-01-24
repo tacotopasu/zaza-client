@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+    <fullyQualifiedTypeName name="mint.function.SetWindowTitle"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
+    <fullyQualifiedTypeName name="mint.Client"/>
+    <fullyQualifiedTypeName name="net.java.games.input.Keyboard"/>
+    <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+    <fullyQualifiedTypeName name="mint.modules.movement.Fly"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="mint.modules.render.Fullbright"/>
+    <fullyQualifiedTypeName name="mint.modules.types.Updatable"/>
+    <fullyQualifiedTypeName name="mint.modules.types.PacketModifier"/>
+    <fullyQualifiedTypeName name="mint.modules.Module"/>
+    <fullyQualifiedTypeName name="mint.modules.player.NoFall"/>
+    <fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketPlayer"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="mint.modules.Module.Category"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package mint.modules.types;
+
+public class PacketModifier {
+
+}

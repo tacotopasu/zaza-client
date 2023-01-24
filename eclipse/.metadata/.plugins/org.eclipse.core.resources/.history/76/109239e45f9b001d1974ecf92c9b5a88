@@ -1,0 +1,8 @@
+package mint.events;
+
+public class Event<T> {
+
+	public boolean cancelled;
+	
+	
+}

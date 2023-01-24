@@ -1,0 +1,5 @@
+package mint.events.listeners;
+
+public class EventUpdate {
+
+}

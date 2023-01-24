@@ -1,0 +1,21 @@
+{
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "golden_apple": "2023-01-24 08:48:14 +0000"
+    },
+    "done": false
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2023-01-24 08:48:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2023-01-23 21:24:57 +0000",
+      "desert": "2023-01-24 08:46:45 +0000"
+    },
+    "done": false
+  }
+}

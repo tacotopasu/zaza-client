@@ -1,0 +1,5 @@
+package mint.events;
+
+public enum EventType {
+
+}

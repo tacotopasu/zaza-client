@@ -1,0 +1,13 @@
+package mint;
+
+import org.lwjgl.opengl.Display;
+
+public class Client {
+
+	public static String name = "Mint", version = "0.1a";
+	
+	public static void startup() {
+		System.out.println("Starting " + name + " v" + version);
+		Display.setTitle(name + " v" + version);
+	}
+}

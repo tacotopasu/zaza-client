@@ -1,0 +1,28 @@
+package mint.ui;
+
+import mint.Client;
+import mint.modules.Module;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.ScaledResolution;
+import net.minecraft.client.renderer.GlStateManager;
+
+public class HUD {
+	
+	public Minecraft mc = Minecraft.getMinecraft();
+	
+	public void draw() {
+		ScaledResolution sr = new ScaledResolution(mc);
+		FontRenderer fr = mc.fontRendererObj;
+		// GlStateManager.scale(0.5, 0.5, 1);
+		int count = 0;
+		for(Module m : Client.modules) {
+			if(!m.toggled) continue;
+			
+			Gui.drawRect(sr.getScaledWidth() - fr.getStringWidth(m.name) - 8, sr.getScaledHeight() - count*fr.FONT_HEIGHT - count * 8 - fr.FONT_HEIGHT*2 - 1, sr.getScaledWidth(), sr.getScaledHeight() - count*fr.FONT_HEIGHT - count * 8, 0x99000000);
+			fr.drawStringWithShadow(m.name, sr.getScaledWidth() - fr.getStringWidth(m.name) - 4, sr.getScaledHeight() - fr.FONT_HEIGHT - 4 - count*fr.FONT_HEIGHT - count*6, -1);
+			count++;
+		}
+	}
+}

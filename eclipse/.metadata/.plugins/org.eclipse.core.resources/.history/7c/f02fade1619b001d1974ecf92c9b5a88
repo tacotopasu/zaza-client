@@ -1,0 +1,31 @@
+package mint.modules.movement;
+
+import org.lwjgl.input.Keyboard;
+
+import mint.events.Event;
+import mint.events.listeners.EventUpdate;
+import mint.modules.Module;
+public class Fly extends Module{
+
+	public Fly() {
+		super("Fly", Keyboard.KEY_g, Category.MOVEMENT);
+	}
+	
+	public void onEnable() {
+		mc.player.capabilities.isFlying = true;
+		mc.player.capabilities.allowFlying = true;
+	}
+	
+	public void onDisable() {
+		mc.player.capabilities.isFlying = false;
+		mc.player.capabilities.allowFlying = false;
+	}
+	
+	public void onEvent(Event e) {
+		if(e instanceof EventUpdate) {
+			if(e.isPre()) {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+package mint.modules.render;
+
+import org.lwjgl.input.Keyboard;
+
+import mint.events.Event;
+import mint.events.listeners.EventUpdate;
+import mint.modules.Module;
+public class Fullbright extends Module{
+
+	public Fullbright() {
+		super("Sprint", Keyboard.KEY_N, Category.MOVEMENT);
+	}
+	
+	public void onEnable() {
+		
+		System.out.println(this.name + " module enabled!");
+	}
+	
+	public void onDisable() {
+		mc.player.setSprinting(mc.gameSettings.keyBindSprint.isKeyDown());
+		System.out.println(this.name + " module disabled!");
+	}
+	
+	public void onEvent(Event e) {
+		if(e instanceof EventUpdate) {
+			if(e.isPre()) {
+				/* if(mc.player.moveForward > 0 && !mc.player.isSneaking() && !mc.player.isCollidedHorizontally) // "Legit" movement, don't sprint if going backwards or not moving, prevents ban on some anticheats */
+				mc.player.setSprinting(true);
+				
+			}
+		}
+	}
+}
